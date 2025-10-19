@@ -16,13 +16,16 @@ This project uses **React (frontend)** and **FastAPI (backend)** with a trained 
 ---
 
 ## 🧩 Project Structure
-
+```bash
 insurance-premium-predictor/
 │
-├── backend/
+
 │ ├── app.py # FastAPI backend server
 │ ├── insurance_model.pkl # Trained ML model
-│ └── requirements.txt # Backend dependencies
+│ └── requirements.txt
+      Notebook.ipynb
+# Backend dependencies
+
 │
 ├── frontend/
 │ ├── src/
@@ -37,7 +40,8 @@ insurance-premium-predictor/
 └── README.md
 
 yaml
-Copy code
+```
+
 
 ---
 
