@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure full viewport height works */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Beautiful gradient background */
+body {
+  @apply bg-gradient-to-br from-indigo-100 via-indigo-200 to-indigo-300;
+  font-family: 'Inter', sans-serif;
+}
