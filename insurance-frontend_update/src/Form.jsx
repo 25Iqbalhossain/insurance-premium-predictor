@@ -37,7 +37,10 @@ function Form({ setResult, setError }) {
       setError("");
     } catch (error) {
       setResult(null);
-      setError(error.response?.data?.error || "Something went wrong!");
+      const apiError = error?.response?.data;
+      const message =
+        (apiError && (apiError.error || apiError.detail)) || error.message || "Something went wrong!";
+      setError(typeof message === "string" ? message : JSON.stringify(message));
     }
   };
 
@@ -88,7 +91,7 @@ function Form({ setResult, setError }) {
         </div>
 
         <div>
-          <label className="block text-gray-700 font-medium mb-1">Income (LPA)</label>
+          <label className="block text-gray-700 font-medium mb-1">Income ( Yearly )</label>
           <input
             id="income_lpa"
             type="number"

@@ -1,0 +1,21 @@
+{
+  "name": "insurance-premium-predictor",
+  "version": "1.0.0",
+  "description": "An interactive web application that predicts **insurance premium risk levels** (High, Medium, or Low) based on user inputs such as age, weight, height, income, city, occupation, and smoking habits.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/25Iqbalhossain/insurance-premium-predictor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/25Iqbalhossain/insurance-premium-predictor/issues"
+  },
+  "homepage": "https://github.com/25Iqbalhossain/insurance-premium-predictor#readme"
+}
