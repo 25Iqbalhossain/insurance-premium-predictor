@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field, computed_field,field_validator
 from typing import Literal, Annotated
 from model.predict import predict_output
 from schema.user_input import Userinput
+from schema.response_model import prediction_model
 # ----------------------------------------------------------
 # Initialize FastAPI app
 # ----------------------------------------------------------
@@ -21,8 +22,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@app.post("/predict")
+# already implement try expection 
+@app.post("/predict",response_model=prediction_model)
 def predict_insurance_premium(user_input: Userinput):
     try:
         user_input = {
